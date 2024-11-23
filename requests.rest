@@ -24,9 +24,18 @@ GET http://localhost:3000/posts?sender=<sender_id>
 
 
 
+### Update Post
+PUT http://localhost:3000/posts/[post-id]
+Content-Type: application/json
+
+{
+    "content": "Updated content"
+}
+
+
 # git add .
-# git commit -m "Get Post by Sender endpoint"
-# git push origin feature/zur/get-post-by-Sender
+# git commit -m "Update Post endpoint"
+# git push origin feature/zur/update-a-post
 
 # git checkout -b feature/elad/get-post-by-id
 # git add .
