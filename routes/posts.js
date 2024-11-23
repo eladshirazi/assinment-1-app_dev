@@ -49,4 +49,26 @@ router.get("/sender/:senderId", async (req, res) => {
   }
 });
 
+// 4. Update Post
+router.put("/:id", async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
+    if (post == null) {
+      return res.status(404).json({ message: "Cannot find post" });
+    }
+
+    if (req.body.sender != null) {
+      post.sender = req.body.sender;
+    }
+    if (req.body.content != null) {
+      post.content = req.body.content;
+    }
+
+    const updatedPost = await post.save();
+    res.json(updatedPost);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
 module.exports = router;
