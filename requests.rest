@@ -9,43 +9,5 @@ Content-Type: application/json
 }
 
 
-
-
-# ### Get Welcome Message
-# GET http://localhost:3000
-
-# ### Get All Posts
-# GET http://localhost:3000/posts
-
-# ### Create Post
-# POST http://localhost:3000/posts
-# Content-Type: application/json
-
-# {
-#     "sender": "John",
-#     "content": "This is a test post"
-# }
-
-# ### Get Post by ID
-# GET http://localhost:3000/posts/[post-id]
-
-# ### Update Post
-# PUT http://localhost:3000/posts/[post-id]
-# Content-Type: application/json
-
-# {
-#     "content": "Updated content"
-# }
-
-# ### Create Comment
-# POST http://localhost:3000/comments
-# Content-Type: application/json
-
-# {
-#     "postId": "[post-id]",
-#     "sender": "Jane",
-#     "content": "This is a comment"
-# }
-
-# ### Get Comments for Post
-# GET http://localhost:3000/comments/post/[post-id]
+### Get All Posts
+GET http://localhost:3000/posts
