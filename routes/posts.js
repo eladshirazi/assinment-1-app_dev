@@ -39,4 +39,14 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// 3. Get Posts by Sender
+router.get("/sender/:senderId", async (req, res) => {
+  try {
+    const posts = await Post.find({ sender: req.params.senderId }); // get post by sender
+    res.status(200).json(posts);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching posts by sender", error });
+  }
+});
+
 module.exports = router;
