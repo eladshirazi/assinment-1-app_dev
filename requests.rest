@@ -11,3 +11,22 @@ Content-Type: application/json
 
 ### Get All Posts
 GET http://localhost:3000/posts
+
+
+### Get Post by ID
+GET http://localhost:3000/posts/123456789
+
+
+
+
+
+
+
+# git add .
+# git commit -m "Get Post by ID endpoint"
+# git push -u origin feature/elad/Get-Post-by-ID
+
+# git checkout -b feature/elad/get-post-by-id
+# git add .
+# git commit -m "Add get post by id endpoint"
+# git push
