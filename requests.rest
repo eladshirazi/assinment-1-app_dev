@@ -18,13 +18,15 @@ GET http://localhost:3000/posts/123456789
 
 
 
+### Get Posts by Sender
+GET http://localhost:3000/posts?sender=<sender_id>
 
 
 
 
 # git add .
-# git commit -m "Get Post by ID endpoint"
-# git push -u origin feature/elad/Get-Post-by-ID
+# git commit -m "Get Post by Sender endpoint"
+# git push origin feature/zur/get-post-by-Sender
 
 # git checkout -b feature/elad/get-post-by-id
 # git add .
